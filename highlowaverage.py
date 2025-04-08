@@ -7,3 +7,20 @@
 #Highest number
 #Lowest number
 #Correct answers for the included file:
+
+with open("numbers.txt") as file:
+    numbers = [float(line) for line in file]
+
+totalCount = len(numbers)
+totalSum = sum(numbers)
+totalAverage = totalSum / totalCount
+highestNumber = max(numbers)
+lowestNumber = min(numbers)
+
+print(f"The total amount of numbers in the list: {totalCount}")
+print(f"The sum of all numbers in the list: {totalSum}")
+print(f"The average of all numbers in the list: {totalAverage}")
+print(f"The highest number within the list: {highestNumber}")
+print(f"The lowest number within the list: {lowestNumber}")
+
+#end of script
